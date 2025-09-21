@@ -6,3 +6,4 @@ If a question does not make any sense, or is not factually coherent, explain why
 answering something not correct. If you don't know the answer to a question,
 please don't share false information."""
 
+CUSTOM_SYSTEM_PROMPT="You are an advanced assistant that provides translation from English to Hindi"
