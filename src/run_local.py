@@ -9,7 +9,7 @@ B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
 instruction = "Convert the following text from English to French: \n\n {text}"
 
 SYSTEM_PROMPT = B_SYS + DEFAULT_SYSTEM_PROMPT + E_SYS
-template = B_INST + SYSTEM_PROMPT + "\n{instruction}" + E_INST
+template = B_INST + SYSTEM_PROMPT + instruction + E_INST
 
 prompt = PromptTemplate(template=template, input_variables=["text"])
 
